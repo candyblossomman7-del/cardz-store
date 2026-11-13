@@ -1,6 +1,6 @@
 const PRODUCTS = [
   {id:"sport-001",name:"Rookie Season",detail:"Basketball · Rookie card",category:"Sports",price:24.00,symbol:"✦",bg:"#a9c5a6",tag:"COLLECTOR PICK"},
-  {id:"poke-001",name:"Radiant Horizon",detail:"Pokémon · Holo rare",category:"Pokémon",price:18.50,symbol:"⚡",bg:"#e2c66d",tag:"HOLO"},
+  {id:"{id:9,name:"Charizard EX",type:"Pokémon",price:49.99,art:"🔥",grade:"Near Mint"},
   {id:"mtg-001",name:"Verdant Guardian",detail:"Magic · Mythic rare",category:"Magic",price:32.00,symbol:"✧",bg:"#b5a4c6",tag:"MYTHIC"},
   {id:"anime-001",name:"Grand Voyage",detail:"Anime & TCG · Special art",category:"Anime & TCG",price:14.00,symbol:"✳",bg:"#d59a7c",tag:"SPECIAL ART"},
   {id:"sport-002",name:"The Big Moment",detail:"Baseball · Vintage style",category:"Sports",price:42.00,symbol:"◈",bg:"#c4b79a",tag:"VINTAGE"},

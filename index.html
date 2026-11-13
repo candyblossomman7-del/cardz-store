@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101114">
+  <meta name="description" content="Cardz — a home for collectible cards across every hobby.">
+  <title>Cardz — Collect What You Love</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="announcement">THE HOME OF COLLECTIBLE CARDS <span>✦</span> FIND YOUR NEXT FAVORITE</div>
+  <header class="site-header">
+    <a class="brand" href="/" aria-label="Cardz home"><span class="brand-mark">C</span>cardz<span class="brand-period">.</span></a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="#shop">Shop all</a><a href="#categories">Categories</a><a href="#about">About</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-button search-toggle" aria-label="Focus search" title="Search">⌕</button>
+      <button class="cart-button" id="open-cart">Cart <span id="cart-count">0</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-line"></span> FOR THE LOVE OF THE PULL</p>
+        <h1>Collect what<br><em>you love.</em></h1>
+        <p class="hero-sub">From rookie grails to rare foils, discover cards worth keeping close.</p>
+        <a class="primary-button" href="#shop">Explore the collection <span>↗</span></a>
+        <div class="hero-note"><span class="note-dot"></span> A home for every kind of collector</div>
+      </div>
+      <div class="hero-art" aria-label="Decorative collectible card artwork">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="hero-card card-back"><div class="back-pattern">✳</div><small>CARDZ / COLLECTOR SERIES</small></div>
+        <div class="hero-card card-front"><div class="card-chip">1 OF 1</div><div class="card-art">✦</div><div class="card-caption"><small>THE COLLECTION</small><strong>Make it<br>legendary.</strong></div></div>
+        <div class="floating-tag tag-top">RARE FINDS <span>↗</span></div>
+        <div class="floating-tag tag-bottom">YOUR NEXT GRAIL AWAITS</div>
+      </div>
+    </section>
+
+    <section class="ticker" aria-label="Store categories"><div>TRADING CARDS <b>✳</b> SPORTS <b>✳</b> TCG <b>✳</b> ENTERTAINMENT <b>✳</b> VINTAGE <b>✳</b> AND EVERYTHING IN BETWEEN <b>✳</b></div></section>
+
+    <section class="category-section" id="categories">
+      <div class="section-heading"><div><p class="eyebrow">EXPLORE YOUR WORLD</p><h2>Find your <em>kind</em> of card.</h2></div><p class="section-aside">One collection. A thousand ways to collect.</p></div>
+      <div class="category-grid">
+        <button class="category-tile cat-sports" data-category="Sports"><span class="cat-symbol">↗</span><span><small>01 / ON THE FIELD</small><strong>Sports</strong></span></button>
+        <button class="category-tile cat-pokemon" data-category="Pokémon"><span class="cat-symbol">✦</span><span><small>02 / TRAINER'S CHOICE</small><strong>Pokémon</strong></span></button>
+        <button class="category-tile cat-mtg" data-category="Magic"><span class="cat-symbol">✧</span><span><small>03 / THE GATHERING</small><strong>Magic</strong></span></button>
+        <button class="category-tile cat-anime" data-category="Anime & TCG"><span class="cat-symbol">✳</span><span><small>04 / FAN FAVORITES</small><strong>Anime & TCG</strong></span></button>
+      </div>
+    </section>
+
+    <section class="shop-section" id="shop">
+      <div class="section-heading shop-heading"><div><p class="eyebrow">THE CARDZ EDIT</p><h2>Fresh from the <em>vault.</em></h2></div><div class="shop-tools"><label class="search-box"><span>⌕</span><input id="search" type="search" placeholder="Search cards..." aria-label="Search cards"></label><select id="sort" aria-label="Sort products"><option value="featured">Featured</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option></select></div></div>
+      <div class="filter-row" id="filters">
+        <button class="filter active" data-category="All">All cards <span>↗</span></button>
+        <button class="filter" data-category="Sports">Sports</button><button class="filter" data-category="Pokémon">Pokémon</button><button class="filter" data-category="Magic">Magic</button><button class="filter" data-category="Anime & TCG">Anime & TCG</button><button class="filter" data-category="Other">Other</button>
+      </div>
+      <div class="product-grid" id="product-grid"></div>
+      <p class="catalog-note">Starter catalog shown for demonstration. Replace these sample listings with your actual inventory before launch.</p>
+    </section>
+
+    <section class="manifesto" id="about"><div class="manifesto-mark">C<span>.</span></div><div><p class="eyebrow">BUILT FOR THE COLLECTORS</p><h2>It's not just a card.<br>It's <em>your story.</em></h2></div><p class="manifesto-text">The thrill of the hunt. The one you've been chasing. The card that takes you right back. Cardz is a place to find the pieces that make collecting yours.</p></section>
+  </main>
+
+  <footer><a class="brand" href="/"><span class="brand-mark">C</span>cardz<span class="brand-period">.</span></a><p>Collect what you love.</p><small>© <span id="year"></span> Cardz. Built for collectors.</small></footer>
+
+  <div class="overlay" id="overlay"></div>
+  <aside class="cart-drawer" id="cart-drawer" aria-label="Shopping cart" aria-hidden="true">
+    <div class="drawer-head"><div><p class="eyebrow">YOUR PICKS</p><h2>Your cart <span id="drawer-count">(0)</span></h2></div><button class="close-button" id="close-cart" aria-label="Close cart">×</button></div>
+    <div class="cart-items" id="cart-items"></div>
+    <div class="cart-bottom"><div class="subtotal"><span>Subtotal</span><strong id="subtotal">$0.00</strong></div><p class="shipping-note">Shipping and taxes calculated at checkout.</p><button class="checkout-button" id="checkout">Continue to checkout <span>↗</span></button><p class="secure-note">Secure checkout powered by Stripe when configured.</p></div>
+  </aside>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="/app.js"></script>
+</body>
+</html>
